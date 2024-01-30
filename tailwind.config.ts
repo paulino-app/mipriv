@@ -8,11 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        josefin: ['Josefin Sans', 'sans-serif'],
+        jost: ['Jost', 'sans-serif'],
       },
+      colors: {
+        'priv-blue': '#4F6EDF',
+        'priv-green': '#25B79F',
+        'priv-red': '#FF005C',
+        'priv-yellow': '#F2B951',
+        'priv-purlple': '#8E91F4',
+        'priv-base': '#191827',
+        'priv-container': '#212034',
+        'priv-container-dark': '#191827',
+        'priv-container-light': '#232236',
+        'priv-gray': '#AAAFBE',
+        'priv-dark-gray': '#2F2D47'
+      }
     },
   },
   plugins: [],
