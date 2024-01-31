@@ -2,7 +2,7 @@ import Row from "../ui/row";
 
 export default function DashboardRecentPurchases({ data }: { data: any[] }) {
   return (
-    <div className="relative col-span-12 h-[366px] rounded-xl bg-priv-container md:col-span-7 md:h-[424px]">
+    <div className="relative col-span-12 h-[366px] animate-fade-move rounded-xl bg-priv-container md:h-[424px] lg:col-span-7">
       <div className="pl-6 pt-6 font-josefin text-xl text-white md:pl-8 md:pt-8 md:text-2xl">
         Recent Purchases
       </div>
@@ -18,16 +18,15 @@ export default function DashboardRecentPurchases({ data }: { data: any[] }) {
           <Row width="26.5%" align={"left"}>
             Customer
           </Row>
-          <Row width="18%" align={"left"}>
+          <Row width="23.5%" align={"left"}>
             Status
           </Row>
         </div>
 
-        {/* Row */}
         {data.map((row: any, index: number) => (
           <div
             key={index}
-            className={`border-priv-gray-light flex h-14 items-center justify-center md:h-16 ${index != data.length - 1 ? "border-b" : "border-0"}`}
+            className={`flex h-14 items-center justify-center border-priv-gray-light md:h-16 ${index != data.length - 1 ? "border-b" : "border-0"}`}
           >
             <Row width="25%" align={"left"}>
               {row.name}
@@ -38,13 +37,13 @@ export default function DashboardRecentPurchases({ data }: { data: any[] }) {
             <Row number={true} width="26.5%" align={"left"}>
               {row.customer}
             </Row>
-            <Row number={true} width="17.5%" align={"left"}>
+            <Row number={true} width="23.5%" align={"left"}>
               {row.status == "complete" ? (
-                <div className="w-24 rounded-sm border border-priv-green py-px text-center text-priv-green">
+                <div className="w-24 rounded-[4px] border border-priv-green py-px text-center text-priv-green">
                   Complete
                 </div>
               ) : (
-                <div className="w-24 rounded-sm border border-priv-yellow py-px text-center text-priv-yellow">
+                <div className="w-24 rounded-[4px] border border-priv-yellow py-px text-center text-priv-yellow">
                   Pending
                 </div>
               )}

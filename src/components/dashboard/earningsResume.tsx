@@ -2,11 +2,9 @@ import Image from "next/image";
 
 export default function DashboardEarningsResume() {
   return (
-    <div className="relative col-span-12 h-64 rounded-xl bg-priv-blue md:col-span-3 md:h-80">
-      <div className="flex h-full items-center justify-center p-8 md:justify-start">
-        {/* center */}
+    <div className="animate-fade-move relative col-span-12 h-52 rounded-xl bg-priv-blue md:col-span-3 md:h-80">
+      <div className="flex h-full items-center justify-center p-4 lg:p-8 md:justify-start">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-1 md:gap-6">
-          {/* item */}
           <DashboardEarningsResumeItem
             title="Monthly Earnings"
             value="$ 19,262.50"

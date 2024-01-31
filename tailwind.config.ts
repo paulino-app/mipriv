@@ -27,6 +27,20 @@ const config: Config = {
         "priv-dark-gray": "#2F2D47",
         "priv-dark-blue": "#14131F",
       },
+      animation: {
+        "fade-move": "fadeMove 0.6s ease-in-out",
+        bouncy: "bouncy 2s ease-in-out",
+      },
+      keyframes: {
+        fadeMove: {
+          "0%": { transform: "translateY(34px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        bouncy: {
+          "0%": { opacity: "0.2" },
+          "100%": { opacity: "1" },
+        },
+      },
     },
   },
   plugins: [],

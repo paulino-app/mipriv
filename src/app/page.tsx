@@ -91,8 +91,12 @@ export default function App() {
             float: "left",
           }}
         >
-          <div className="w-full h-screen overflow-scroll">
-            <Navbar />
+          <div className="h-screen w-full overflow-scroll">
+            <Navbar
+              mediaQuery={matches}
+              open={open}
+              menuVisible={menuVisible}
+            />
             <Home />
           </div>
         </div>

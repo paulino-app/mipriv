@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Subscriptions() {
   return (
-    <div className="relative col-span-12 h-[366px] rounded-xl bg-priv-container md:col-span-4 md:h-[424px]">
+    <div className="relative col-span-12 h-[366px] rounded-xl bg-priv-container md:col-span-6 lg:col-span-3 md:h-[424px] animate-fade-move">
       <div className="pl-6 pt-6 font-josefin text-xl text-white md:pl-8 md:pt-8 md:text-2xl">
         Subscriptions
       </div>

@@ -1,9 +1,8 @@
-import Image from "next/image";
 import Row from "../ui/row";
 
 export default function DashboardPopularPosts({ data }: { data: any[] }) {
   return (
-    <div className="relative col-span-12 h-[366px] rounded-xl bg-priv-container md:col-span-5 md:h-[424px]">
+    <div className="animate-fade-move relative col-span-12 h-72 rounded-xl bg-priv-container md:col-span-6 lg:col-span-5 md:h-[424px]">
       <div className="pl-6 pt-6 font-josefin text-xl text-white md:pl-8 md:pt-8 md:text-2xl">
         Popular posts
       </div>
@@ -27,7 +26,7 @@ export default function DashboardPopularPosts({ data }: { data: any[] }) {
         {data.map((row: any, index: number) => (
           <div
             key={index}
-            className={`border-priv-gray-light flex h-14 items-center justify-center md:h-16 ${index != data.length - 1 ? "border-b" : "border-0"}`}
+            className={`flex h-14 items-center justify-center border-priv-gray-light md:h-16 ${index != data.length - 1 ? "border-b" : "border-0"}`}
           >
             <Row width="20%" align={"left"}>
               {row.rank}

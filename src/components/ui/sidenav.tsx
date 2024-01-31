@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { useRouter } from "next/router";
 
 function Sidenav(props: any) {
   const handleClose = () => {
@@ -50,7 +49,6 @@ function Sidenav(props: any) {
           position: props.showMenu ? "absolute" : "static",
         }}
       >
-        {/* close */}
         <div className="flex w-64 justify-end">
           <div
             className="mr-4 mt-4 flex h-6 w-6 cursor-pointer items-center justify-center"

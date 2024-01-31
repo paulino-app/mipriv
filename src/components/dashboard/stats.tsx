@@ -16,7 +16,7 @@ export default function DashboardStats({
   k?: boolean;
 }) {
   return (
-    <div className="col-span-6 md:col-span-3">
+    <div className="col-span-6 lg:col-span-3 animate-fade-move">
       <div className="flex h-24 w-full items-center rounded-xl bg-priv-container md:h-28">
         <div className="ml-5 flex h-12 md:h-14">
           {/* logo */}

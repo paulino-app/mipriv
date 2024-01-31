@@ -1,5 +1,3 @@
-"use client";
-
 import DashboardEarnings from "@/components/dashboard/earnings";
 import DashboardEarningsResume from "@/components/dashboard/earningsResume";
 import DashboardPopularPosts from "@/components/dashboard/popularPosts";
@@ -10,7 +8,6 @@ import Subscriptions from "@/components/dashboard/subscription";
 import DashboardTopProducts from "@/components/dashboard/topProducts";
 import DashboardTopSubs from "@/components/dashboard/topSubscribers";
 import axios from "axios";
-import Image from "next/image";
 import { use, useEffect, useState } from "react";
 
 export default function Home() {
@@ -74,7 +71,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="mx-auto w-[90%] lg:w-[1120px]">
+      {/* <div className="mx-auto w-[90%] lg:w-[1120px]"> */}
+      <div className="mx-auto w-[90%] lg:max-w-[1120px]">
         <div className="pb-7 pt-9">
           <div className="font-josefin text-2xl text-white">
             Good Afternoon Sofia 👋
