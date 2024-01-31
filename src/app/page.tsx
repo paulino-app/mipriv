@@ -12,7 +12,7 @@ function useForceUpdate() {
   return () => setToggle((toggle) => !toggle);
 }
 
-export default function App({ Component, pageProps, router }: AppProps) {
+export default function App() {
   const [menuVisible, setMenuVisible] = useState<boolean>(true);
   const compactMenuVisible = useRef<boolean>(false);
 
