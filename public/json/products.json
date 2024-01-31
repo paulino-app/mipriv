@@ -1,0 +1,20 @@
+[
+  {
+    "item": "Cat pictures",
+    "image": "/images/product1.svg",
+    "views": 1420,
+    "sales": 24
+  },
+  {
+    "item": "Special photo",
+    "image": "/images/product2.svg",
+    "views": 892,
+    "sales": 20
+  },
+  {
+    "item": "Zing Cosplay",
+    "image": "/images/product3.svg",
+    "views": 720,
+    "sales": 12
+  }
+]

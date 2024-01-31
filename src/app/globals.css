@@ -8,3 +8,24 @@
 body {
   background-color: #191827;
 }
+
+.main {
+  width: 100vw;
+  /* height: calc(100vh - 52px); */
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.first {
+  width: 256px;
+  float: left;
+}
+
+.second {
+  width: calc(100% - 256px);
+  height: 100vh;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
