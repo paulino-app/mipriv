@@ -11,12 +11,19 @@ export default function DashboardEarnings() {
     "Annually",
   ]);
 
+  const periodMap: { [key: string]: string } = {
+    "7 Days": "/images/curve_blue_7_days.svg",
+    "14 Days": "/images/curve_blue_14_days.svg",
+    Month: "/images/curve_blue_month.svg",
+    Annually: "/images/curve_blue_year.svg",
+  };
+
   const handleOptions = (option: string) => {
     const periods = ["7 Days", "14 Days", "Month", "Annually"];
     setPeriod(option);
     setPeriodOptions(periods.filter((period) => period !== option));
 
-    setImage('/images/curve_blue_year.svg');
+    setImage(periodMap[option]);
   };
 
   return (
